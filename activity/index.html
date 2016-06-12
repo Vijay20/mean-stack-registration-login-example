@@ -1,0 +1,18 @@
+﻿<h1>My Account</h1>
+<div class="form-container">
+    <form method="post">
+        <div class="form-group">
+            <label for="HoursSpent">HoursSpent</label>
+            <input type="text" id="HoursSpent" class="form-control" ng-model="vm.activity.HoursSpent" required />
+        </div>
+        <div class="form-group">
+            <label for="SpentOnDate">Spent on Date</label>
+            <input type="text" id="SpentOnDate" class="form-control" ng-model="vm.activity.SpentOnDate" required />
+        </div>
+         
+        <div class="form-group">
+            <button class="btn btn-primary" ng-click="vm.saveActivity()">Create</button>
+            <button class="btn btn-danger" ng-click="vm.deleteUser()">Delete</button>
+        </div>
+    </form>
+</div>
